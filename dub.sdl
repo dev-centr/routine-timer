@@ -1,5 +1,5 @@
 name "routine-timer"
-description "Wait for a harness to be open, then submit the due routine through agent-bus"
+description "Daemon for a routine ledger. Waits for a harness process, then submits the job through agent-bus"
 license "MIT"
 targetType "executable"
 targetName "routine-timer"

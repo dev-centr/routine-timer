@@ -10,3 +10,7 @@ The daemon reports when this host or a harness process comes up. A due routine i
 * The default `launch` value is `wait`. The timer does not start a harness on a personal computer.
 * `launch: "launch"` is opt-in and requires `launch_program`.
 * `apply --install` registers the daemon at user logon, not at system boot.
+
+=== Repository face
+
+This repository is the daemon. `serve` runs that process. The other `routine-timer` commands are the control interface in the same program.

@@ -5,9 +5,11 @@
 
 # routine-timer
 
-The ledger daemon reports when a computer or a harness process comes up, then submits the due routine through [agent-bus](https://github.com/dev-centr/agent-bus). It does not open the harness for you.
+This repository is the **daemon** for a routine ledger. It reports when a computer or a harness process comes up, then submits the due routine through [agent-bus](https://github.com/dev-centr/agent-bus). It does not open the harness for you.
 
 </div>
+
+The `routine-timer` executable is the control interface for that daemon. `serve` is the daemon process. `status`, `plan`, `fire`, and `apply` inspect or install it. They are separate commands in one program.
 
 ## Install
 
@@ -21,7 +23,7 @@ dub build --compiler=ldc2
 
 ## Use
 
-`status` only reports. `serve` is the daemon. A target with `launch: "wait"` (the default) and `presence.process` set is submitted after that process is already running.
+`serve` runs the daemon. `status` only reports. A target with `launch: "wait"` (the default) and `presence.process` set is submitted after that process is already running.
 
 ```shell
 routine-timer status --ledger C:\path\to\routine-ledger --machine local
