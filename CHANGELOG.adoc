@@ -1,0 +1,12 @@
+= Changelog
+:toclevels: 3
+
+== 2026-11-12
+
+=== Wait for the harness
+
+The daemon reports when this host or a harness process comes up. A due routine is submitted with `agent-bus submit` only after that process is running.
+
+* The default `launch` value is `wait`. The timer does not start a harness on a personal computer.
+* `launch: "launch"` is opt-in and requires `launch_program`.
+* `apply --install` registers the daemon at user logon, not at system boot.

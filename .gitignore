@@ -1,0 +1,11 @@
+*
+!/.gitignore
+!/.gitattributes
+!/AGENTS.md
+!/CHANGELOG.adoc
+!/LICENSE
+!/README.md
+!/dub.sdl
+!/dub.selections.json
+!/source/
+!/source/**

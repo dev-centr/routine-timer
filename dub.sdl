@@ -1,0 +1,5 @@
+name "routine-timer"
+description "Wait for a harness to be open, then submit the due routine through agent-bus"
+license "MIT"
+targetType "executable"
+targetName "routine-timer"
